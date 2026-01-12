@@ -13,7 +13,10 @@ int main(int argc, char* argv[]) {
   int programReturn;
   const char* inputCommand = argv[1];
   double number1 = atof(argv[2]);
-  double number2 = atof(argv[3]);
+  double number2 = 0.0;
+
+  // redefines argument
+  if (argc == 4) number2 = atof(argv[3]);
 
   // Check commandline arguments, must 4 arguments or throw an error
   if (argc < 3 || 4 < argc) {
@@ -84,7 +87,7 @@ int main(int argc, char* argv[]) {
         return EXIT_SUCCESS;
     }
     
-    if (strcmp(inputCommand, "root") == 0) {
+    if (strcmp(inputCommand, "remainder") == 0) {
         double answer = scientificMaths::remainder(number1, number2);
 
         fprintf(stderr, "instruction: remainder\n");		

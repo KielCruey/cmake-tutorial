@@ -1,0 +1,2 @@
+# CMake Tutorial Series
+The following repository is for reference code for the "CMake Tutorial Series" on [kcruey.com](https://kcruey.com/). Code is intended to help support learnings and technical communication.
