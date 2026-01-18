@@ -1,4 +1,4 @@
-# creating a target empty target named "Scientific-Maths"
+# creating an empty target named "Scientific-Maths"
 add_library(Scientific-Maths)
 
 # adding associated files to target
